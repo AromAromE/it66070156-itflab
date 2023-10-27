@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setprofileimg(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class="content"> 
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">69</div>
+        </div>
+        <div class="username"></div>
+            <a href="https://github.com/" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p">ITF Gallery</p>
+            </a>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Set new the username</label><input style="margin-left: 10px;" type="text" 
+                id="username"><button  style="margin-left: 10px;" id="setUsername" onclick="setUsername()">set</button></div>
+            <div><label style="font-weight: 400;">Set new profile image URL</label><input style="margin-left: 10px;" type="text" 
+                id="profileimg"><button  style="margin-left: 10px;" id="setImg" onclick="setprofileimg()">set</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(https://i.etsystatic.com/21404487/r/il/d2048a/3291090243/il_570xN.3291090243_781n.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://prom-date.com/cdn/shop/articles/King_Kevin1500.jpg?v=1665548251);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/1200x/2d/a0/38/2da0387ec4d9a7b34e95e08e43dbab04.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://elephant.art/wp-content/uploads/2022/10/125508717_114549837005674_736902037107274845_n.jpg);"></div>
+            <div class="gallery-item row-span" style="background-image: url(https://i.pinimg.com/736x/e5/b1/8f/e5b18f5b3ba881ec14ab2ad8fca758d8.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2019/12/64480910_458676941558545_3499458223608311278_n-5e0b20f1a29a9__700.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/originals/b2/bc/7d/b2bc7da403f97999700041e2fbdb4e90.png);"></div>
+            <div class="gallery-item" style="background-image: url(https://dcxvepib5r3t6.cloudfront.net/attachments/file_s3s/5ea0/1c59/1fa7/8c00/0f5b/960f/original/Vanessa_Stockard_metalmagazine-14.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/736x/97/6e/d4/976ed4a3f53fc2704c353273c319444f.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://artlogic-res.cloudinary.com/w_2400,h_2400,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite0673/usr/library/images/main/events/51/cake-chair.jpeg);"></div>            
+    </div>
+</body>
+</html>
